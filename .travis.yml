@@ -9,8 +9,8 @@ matrix:
           sources:
             - ubuntu-toolchain-r-test
           packages:
-            - g++-7
-          env: COMPILER=g++-7
+            - g++-7.4
+          env: COMPILER=g++-7.4
     - os: linux
       addons:
         apt:
