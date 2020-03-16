@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+
+  travis_playground:
+    build: .
+    image: travis-playground
+    volumes:
+      - ../:/source
+    stdin_open: true
+    tty: true
