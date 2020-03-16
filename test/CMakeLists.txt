@@ -8,10 +8,10 @@ download_project(PROJ                googletest
 add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BINARY_DIR})
 
 set(TST_SOURCES 
-	tst_example.cpp
+	tests.cpp
 )
 
-add_executable(example_test ${TST_SOURCES})
+add_executable(tests ${TST_SOURCES})
 
-target_link_libraries(example_test gtest gmock_main)
+target_link_libraries(tests gtest gmock_main)
 
