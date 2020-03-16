@@ -3,6 +3,7 @@ language: c++
 matrix:
   include:
     - os: linux
+      dist: bionic
       addons:
         apt:
           sources:
@@ -36,7 +37,7 @@ script:
 - cd src
 - ./travis_test
 - cd ../test
-- ./example_test
+- ./tests
 - cd ..
 - make coverage
 
