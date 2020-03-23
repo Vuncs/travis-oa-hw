@@ -14,6 +14,12 @@ TEST(AddTest, testAddFunction2)
 	EXPECT_EQ(1, a);
 }
 
+TEST(AddTest, testAddFunction3)
+{
+	int a = basicops::add(-4, -5);
+	EXPECT_EQ(-9, a);
+}
+
 TEST(SubTest, testSubFunction1)
 {
 	int a = basicops::sub(5, 2);
